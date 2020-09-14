@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/ArtistHam/music-app/static/css/main.de724e24.chunk.css",
+    "main.js": "/ArtistHam/music-app/static/js/main.1d910a39.chunk.js",
+    "main.js.map": "/ArtistHam/music-app/static/js/main.1d910a39.chunk.js.map",
+    "runtime-main.js": "/ArtistHam/music-app/static/js/runtime-main.c57136b3.js",
+    "runtime-main.js.map": "/ArtistHam/music-app/static/js/runtime-main.c57136b3.js.map",
+    "static/js/2.bb41581b.chunk.js": "/ArtistHam/music-app/static/js/2.bb41581b.chunk.js",
+    "static/js/2.bb41581b.chunk.js.map": "/ArtistHam/music-app/static/js/2.bb41581b.chunk.js.map",
+    "index.html": "/ArtistHam/music-app/index.html",
+    "precache-manifest.e7e33423c6c3e5116de01afa7c23b8a1.js": "/ArtistHam/music-app/precache-manifest.e7e33423c6c3e5116de01afa7c23b8a1.js",
+    "service-worker.js": "/ArtistHam/music-app/service-worker.js",
+    "static/css/main.de724e24.chunk.css.map": "/ArtistHam/music-app/static/css/main.de724e24.chunk.css.map",
+    "static/js/2.bb41581b.chunk.js.LICENSE.txt": "/ArtistHam/music-app/static/js/2.bb41581b.chunk.js.LICENSE.txt",
+    "static/media/Seether-69_Tea.mp3": "/ArtistHam/music-app/static/media/Seether-69_Tea.3b1adf9a.mp3",
+    "static/media/Seether-Broken.mp3": "/ArtistHam/music-app/static/media/Seether-Broken.24e60962.mp3",
+    "static/media/Seether-Driven_Under.mp3": "/ArtistHam/music-app/static/media/Seether-Driven_Under.326522bd.mp3",
+    "static/media/Seether-Fade_Away.mp3": "/ArtistHam/music-app/static/media/Seether-Fade_Away.a4335f0f.mp3",
+    "static/media/Seether-Fine_Again.mp3": "/ArtistHam/music-app/static/media/Seether-Fine_Again.d2f17b73.mp3",
+    "static/media/Seether-Fuck_It.mp3": "/ArtistHam/music-app/static/media/Seether-Fuck_It.17bad45a.mp3",
+    "static/media/Seether-Gasoline.mp3": "/ArtistHam/music-app/static/media/Seether-Gasoline.dd6f2070.mp3",
+    "static/media/Seether-Love_Her.mp3": "/ArtistHam/music-app/static/media/Seether-Love_Her.5cd27a91.mp3",
+    "static/media/Seether-Needles.mp3": "/ArtistHam/music-app/static/media/Seether-Needles.1af1ec3f.mp3",
+    "static/media/Seether-Pig.mp3": "/ArtistHam/music-app/static/media/Seether-Pig.de59f705.mp3",
+    "static/media/Seether-Pride.mp3": "/ArtistHam/music-app/static/media/Seether-Pride.601c8359.mp3",
+    "static/media/Seether-Remedy.mp3": "/ArtistHam/music-app/static/media/Seether-Remedy.0b89d09a.mp3",
+    "static/media/Seether-Sympathetic.mp3": "/ArtistHam/music-app/static/media/Seether-Sympathetic.99d2fd64.mp3",
+    "static/media/Seether-The_Gift.mp3": "/ArtistHam/music-app/static/media/Seether-The_Gift.e9dc0fd5.mp3",
+    "static/media/Seether-Truth.mp3": "/ArtistHam/music-app/static/media/Seether-Truth.2f601877.mp3",
+    "static/media/Seether-Your_Bore.mp3": "/ArtistHam/music-app/static/media/Seether-Your_Bore.a58af77a.mp3",
+    "static/media/dropdown-off.9ca489c0.svg": "/ArtistHam/music-app/static/media/dropdown-off.9ca489c0.svg",
+    "static/media/loader.png": "/ArtistHam/music-app/static/media/loader.90d93912.png",
+    "static/media/music_album.dfe4b9b7.svg": "/ArtistHam/music-app/static/media/music_album.dfe4b9b7.svg",
+    "static/media/song.f38569a3.svg": "/ArtistHam/music-app/static/media/song.f38569a3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c57136b3.js",
+    "static/js/2.bb41581b.chunk.js",
+    "static/css/main.de724e24.chunk.css",
+    "static/js/main.1d910a39.chunk.js"
+  ]
+}
