@@ -18,15 +18,16 @@ import song8 from "./Songs/Seether-Fuck_It.mp3";
 import song9 from "./Songs/Seether-The_Gift.mp3";
 import song10 from "./Songs/Seether-Love_Her.mp3";
 import song11 from "./Songs/Seether-Gasoline.mp3";
-import song12 from "./Songs/Seether-Your_Bore.mp3";
-import song13 from "./Songs/Seether-Fade_Away.mp3";
-import song14 from "./Songs/Seether-Fine_Again.mp3";
-import song15 from "./Songs/Seether-Sympathetic.mp3";
-import song16 from "./Songs/Seether-Driven_Under.mp3";
+import song12 from "./Songs/Seether-Fade_Away.mp3";
+import song13 from "./Songs/Seether-Fine_Again.mp3";
+import song14 from "./Songs/Seether-Sympathetic.mp3";
+import song15 from "./Songs/Seether-Driven_Under.mp3";
 
 import {ReactComponent as SongIcon} from "./Images/song.svg";
 import {ReactComponent as AlbumIcon} from "./Images/music_album.svg";
 import {ReactComponent as DropdownOff} from "./Images/dropdown-off.svg";
+
+const songs = [song1, song2, song3, song4, song5, song6, song7, song8, song9, song10, song11, song12, song13, song14, song15];
 
 function App() {
 
@@ -34,9 +35,9 @@ function App() {
   const [activeTab, setActiveTab] = useState("SONGS");
   const [showPlayer, setShowPlayer] = useState(false);
   const [currentSong, setCurrentSong] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const songs = [song1, song2, song3, song4, song5, song6, song7, song8, song9, song10, song11, song12, song13, song14, song15, song16];
     songs.forEach((song) => {
       let au = document.createElement('audio');
       au.src = song;
@@ -48,7 +49,13 @@ function App() {
           fetchFileAsBuffer(song).then(parse).then(tag => setSongWithTags(s => [...s, {song, tag, duration: formatedDuration, durationInSeconds: duration }]));
       },false);
     });
-  },[])
+  }, []);
+
+  useEffect(() => {
+    if(songsWithTags.length + 1 >= songs.length) {
+      setLoading(false);
+    }
+  },[songsWithTags])
 
   const openPlayer = useCallback((songData) => (e) => {
     setShowPlayer(true);
@@ -66,15 +73,15 @@ function App() {
       <Player showPlayer={showPlayer} currentSong={currentSong}/>
       <main className="main-content">
         { activeTab === "SONGS" ?
-        <SongList songsWithTags={songsWithTags} openPlayer={openPlayer} /> :
+        <SongList songsWithTags={songsWithTags} openPlayer={openPlayer} loading={loading} /> :
         <AlbumList songsWithTags={songsWithTags} openPlayer={openPlayer} />}
       </main>
       <footer className="footer">
-        <button onClick={() => {setActiveTab("SONGS")}} className={`${activeTab === "SONGS" ? "active" : ""}`}>
+        <button disabled={loading} onClick={() => {setActiveTab("SONGS")}} className={`${activeTab === "SONGS" ? "active" : ""}`}>
           <SongIcon className="icon"/>
           Songs
         </button>
-        <button onClick={() => {setActiveTab("ALBUMS")}} className={`${activeTab === "ALBUMS" ? "active" : ""}`}>
+        <button disabled={loading} onClick={() => {setActiveTab("ALBUMS")}} className={`${activeTab === "ALBUMS" ? "active" : ""}`}>
           <AlbumIcon className="icon"/>
           Albums
         </button>

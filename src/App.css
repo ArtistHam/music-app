@@ -364,8 +364,16 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .loader {
-  margin-top: 20px;
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  cursor: not-allowed;
+  background-color: rgba(0, 0, 0, 0.39);
+  padding-top: 400px;
   color: #ffffff;
+  z-index: 11;
 }
 
 .loader img {
@@ -373,6 +381,11 @@ input[type=range]:focus::-ms-fill-upper {
   margin: 0 30%;
   animation: loader-spin infinite 8s linear;
 }
+
+button[disabled], button:disabled {
+  cursor: not-allowed;
+}
+
 
 @keyframes loader-spin {
   from { transform: rotate(0deg); }
@@ -405,7 +418,6 @@ input[type=range]:focus::-ms-fill-upper {
     flex-direction: row;
     align-items: center;
     letter-spacing: 1px;
-    cursor: pointer;
     margin: 0 0 20px 20px;
   }
 

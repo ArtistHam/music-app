@@ -30,7 +30,6 @@ export default function Player({showPlayer, currentSong}) {
     };
     return () => {
       clearTimeout(timerId);
-      setVolume(100);
     }
   });
 
@@ -93,7 +92,7 @@ export default function Player({showPlayer, currentSong}) {
             type="range"
             min="0"
             max="100"
-            defaultValue={volume}
+            defaultValue="100"
           />
           <div id="volume-measure" className="volume-measure">{volume}%</div>
         </div>
